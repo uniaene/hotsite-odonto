@@ -20206,7 +20206,7 @@ section {
   width: 100%;
 }
 .twentytwenty-wrapper .twentytwenty-container::before, .twentytwenty-wrapper .twentytwenty-container::after {
-  content: "BEFORE";
+  content: "ANTES";
   position: absolute;
   top: 50%;
   left: 30px;
@@ -20227,7 +20227,7 @@ section {
   letter-spacing: 1px;
 }
 .twentytwenty-wrapper .twentytwenty-container::after {
-  content: "AFTER";
+  content: "DEPOIS";
   right: 30px;
   left: auto;
 }

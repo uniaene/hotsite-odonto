@@ -12458,7 +12458,7 @@ i[class*=flaticon-] {
 .show-focus-outline select:focus,
 .show-focus-outline input:focus,
 .show-focus-outline a:focus {
-  outline: 2px solid red !important;
+  outline: 2px solid white !important;
 }
 
 @media (max-width: 991px) {
@@ -53573,4 +53573,41 @@ footer.site-footer.footer-dark .fb-inner {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+/*# Section Mapa */
+.chat-header {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding-bottom: 8px;
+}
+
+.chat-body {
+    background-color: #f0f0f0;
+    font-size: 15px;
+    color: #333;
+    min-height: 80px;
+}
+
+.chat-message.received {
+    background-color: #e1ffc7;
+    padding: 8px 12px;
+    border-radius: 8px;
+    display: inline-block;
+    max-width: 100%;
+}
+
+.chat-footer input {
+    border-radius: 25px;
+    padding-left: 16px;
+    height: 45px;
+    border: 1px solid #ccc;
+}
+
+.chat-footer a.btn-success {
+    background-color: #25D366 !important;
+    border: none;
+}
+
+.chat-footer a.btn-success:hover {
+    background-color: #1ebe57 !important;
+}
 

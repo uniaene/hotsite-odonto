@@ -1753,10 +1753,9 @@
 							data-wow-duration="0.8s">
 							<div class="map-wrapper style-1">
 								<iframe
-									src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3894.1788503309112!2d-38.972626924175984!3d-12.570455751873968!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x715c797eb654c1b%3A0x692fb199265254b0!2sUNIAENE%20-%20Centro%20Universit%C3%A1rio%20Adventista%20de%20Ensino%20do%20Nordeste!5e0!3m2!1spt-BR!2sbr!4v1752150497072!5m2!1spt-BR!2sbr"
+									src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d31153.474571245468!2d-38.988430572498245!3d-12.570094749873814!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x715c797eb654c1b%3A0x692fb199265254b0!2sUNIAENE%20-%20Centro%20Universit%C3%A1rio%20Adventista%20de%20Ensino%20do%20Nordeste!5e0!3m2!1spt-BR!2sbr!4v1752156068302!5m2!1spt-BR!2sbr"
 									width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
 									referrerpolicy="no-referrer-when-downgrade"></iframe>
-
 								<div class="item1">
 									<div class="info-widget style-16">
 										<div class="row g-xl-5 g-4">
@@ -1791,36 +1790,158 @@
 								</div>
 							</div>
 						</div>
+						<style>
+							.whatsapp-chat-box {
+								max-width: 360px;
+								min-width: 320px;
+								margin: auto;
+								background: #ece5dd;
+								border-radius: 20px;
+								box-shadow: 0 8px 32px #00000033;
+								overflow: hidden;
+								font-family: 'Segoe UI', Arial, sans-serif;
+								min-height: 640px;
+								max-height: 800px;
+								display: flex;
+								flex-direction: column;
+							}
+
+							.whatsapp-chat-header {
+								background: #075e54;
+								color: #fff;
+								padding: 16px;
+								display: flex;
+								align-items: center;
+							}
+
+							.whatsapp-chat-header img {
+								width: 36px;
+								height: 36px;
+								margin-right: 12px;
+								border-radius: 50%;
+								background: #fff;
+								padding: 2px;
+							}
+
+							.whatsapp-chat-title {
+								font-weight: 600;
+								font-size: 1.1rem;
+								margin: 0;
+							}
+
+							.whatsapp-chat-body {
+								flex: 1;
+								padding: 16px 8px 8px 8px;
+								background: url("../shared/images/whstapp_bg.png");
+								background-size: cover;
+								overflow-y: auto;
+								display: flex;
+								flex-direction: column;
+								justify-content: flex-end;
+							}
+
+							.whatsapp-message {
+								max-width: 80%;
+								background: #fff;
+								color: #111;
+								border-radius: 8px 8px 8px 0;
+								box-shadow: 0 1px 2px #00000008;
+								padding: 12px 14px 6px 14px;
+								margin-bottom: 6px;
+								position: relative;
+								align-self: flex-start;
+								font-size: 1rem;
+							}
+
+							.whatsapp-message .wa-time {
+								position: absolute;
+								right: 8px;
+								bottom: 4px;
+								font-size: 0.75rem;
+								color: #909090;
+								opacity: 0.75;
+								font-weight: 500;
+							}
+
+							.whatsapp-chat-footer {
+								background: #f7f7f7;
+								padding: 10px 10px 10px 14px;
+								display: flex;
+								align-items: center;
+								border-top: 1px solid #ddd;
+							}
+
+							.whatsapp-chat-footer input {
+								flex: 1;
+								border: none;
+								border-radius: 24px;
+								padding: 10px 16px;
+								background: #fff;
+								font-size: 1rem;
+								outline: none;
+							}
+
+							.whatsapp-chat-footer .send-btn {
+								background: #25d366;
+								border: none;
+								width: 42px;
+								height: 42px;
+								border-radius: 50%;
+								margin-left: 8px;
+								display: flex;
+								align-items: center;
+								justify-content: center;
+								transition: background 0.2s;
+								cursor: pointer;
+								box-shadow: 0 2px 8px #00000020;
+							}
+
+							.whatsapp-chat-footer .send-btn:hover {
+								background: #128c7e;
+							}
+
+							.whatsapp-chat-footer .send-btn img {
+								width: 22px;
+								height: 22px;
+							}
+						</style>
+
 						<div class="col-xl-5 col-lg-6 m-b30 wow fadeInUp" data-wow-delay="0.4s"
 							data-wow-duration="0.8s">
 							<div class="form-wrapper style-1 m-l40">
 								<div class="form-body bg-secondary background-blend-burn p-4"
 									style="background-image: url(images/background/bg2.png); background-size: cover; background-position: bottom right; border-radius: 20px;">
 
-									<!-- Cabeçalho estilo WhatsApp -->
-									<div class="chat-header d-flex align-items-center mb-3">
-										<img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp"
-											style="width: 24px; height: 24px; margin-right: 10px;">
-										<h5 class="text-white m-0">Atendimento Odonto</h5>
+
+									<div class="whatsapp-chat-box">
+										<!-- Header -->
+										<div class="whatsapp-chat-header">
+											<img src="https://cdn-icons-png.flaticon.com/512/733/733585.png"
+												alt="WhatsApp">
+											<span class="whatsapp-chat-title">Atendimento Odonto</span>
+										</div>
+
+										<!-- Corpo das mensagens -->
+										<div class="whatsapp-chat-body">
+											<div class="whatsapp-message">
+												Olá! 👋 Como podemos te ajudar com o curso de Odontologia?
+												<span class="wa-time">agora</span>
+											</div>
+										</div>
+
+										<!-- Footer input -->
+										<form class="whatsapp-chat-footer" action="#" onsubmit="enviarWhatsApp(event)">
+											<input type="text" id="whatsMessage"
+												placeholder="Escreva sua mensagem..." />
+											<button type="submit" class="send-btn">
+												<img src="../shared/images/maps/enviar.png" class="position-absolute"
+													alt="Enviar">
+											</button>
+										</form>
 									</div>
 
-									<!-- Mensagem inicial -->
-									<div class="chat-body bg-white p-3 mb-3" style="border-radius: 12px;">
-										<div class="chat-message received mb-2">Olá! 👋 Como podemos te ajudar com o
-											curso de Odontologia?</div>
-									</div>
 
-									<!-- Campo de mensagem + botão -->
-									<div class="chat-footer d-flex">
-										<input type="text" id="whatsMessage" class="form-control"
-											placeholder="Escreva sua mensagem..." />
-										<a id="sendWhats" target="_blank"
-											class="btn btn-success ms-2 d-flex align-items-center justify-content-center"
-											style="width: 45px; height: 45px; border-radius: 50%;">
-											<img src="../shared/images/maps/enviar.png"
-												alt="Enviar" style="width: 24px; height: 24px; position: absolute;">
-										</a>
-									</div>
+
 								</div>
 							</div>
 						</div>
@@ -1897,8 +2018,8 @@
 							<div class="widget widget_services">
 								<h2 class="footer-title">Redes Sociais</h2>
 								<ul class="nav-inline">
-									<li><a href="https://www.instagram.com/odonto.uniaene?igsh=MXdpa3k4MTNwamxvcA==" target="_blank"><i
-												class="fa-brands fa-instagram"></i> Instagram</a></li>
+									<li><a href="https://www.instagram.com/odonto.uniaene?igsh=MXdpa3k4MTNwamxvcA=="
+											target="_blank"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
 									<li><a href="https://www.facebook.com/share/p/1Cia5zN5AL/" target="_blank"><i
 												class="fa-brands fa-facebook-f"></i> Facebook</a></li>
 									<li><a href="https://www.youtube.com/watch?v=U0v2q1ftOow" target="_blank"><i
@@ -1978,16 +2099,16 @@
 			});
 		});
 
-		document.getElementById('sendWhats').addEventListener('click', function () {
-			const message = document.getElementById('whatsMessage').value.trim();
-			const phone = "5575991870101"; // Número do WhatsApp
-			if (message) {
-				const url = `https://api.whatsapp.com/send?phone=${phone}&text=${encodeURIComponent(message)}`;
-				this.href = url;
-			} else {
-				alert("Digite uma mensagem antes de enviar.");
-			}
-		});
+
+		function enviarWhatsApp(event) {
+			event.preventDefault();
+			var numero = "5575991870101"; // Substitua pelo número do WhatsApp desejado
+			var mensagem = document.getElementById('whatsMessage').value || "Olá! Gostaria de mais informações sobre o curso de Odontologia do UNIAENE.";
+			var url = "https://wa.me/" + numero + "?text=" + encodeURIComponent(mensagem);
+			window.open(url, '_blank');
+		}
+
+
 
 
 	</script>

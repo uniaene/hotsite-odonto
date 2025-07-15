@@ -62765,7 +62765,7 @@ footer.site-footer.footer-dark .fb-inner {
 .whatsapp-chat-body {
   flex: 1;
   padding: 16px 8px 8px 8px;
-  background: url("../shared/images/whstapp_bg.png");
+  background-image: url("../../shared/images/whstapp_bg.png");
   background-size: cover;
   overflow-y: auto;
   display: flex;
